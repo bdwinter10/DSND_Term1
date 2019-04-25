@@ -23,7 +23,7 @@ def distribution(data, transformed = False):
     """
 
     # Create figure
-    fig = pl.figure(figsize = (15,5));
+    fig = pl.figure(figsize = (15,10));
 
     # Skewed feature plotting
     for i, feature in enumerate(['capital-gain','capital-loss']):
