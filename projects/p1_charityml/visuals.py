@@ -15,6 +15,7 @@ import numpy as np
 import pandas as pd
 from time import time
 from sklearn.metrics import f1_score, accuracy_score
+import matplotlib.gridspec as gridspec
 
 
 def distribution(data, transformed = False):
@@ -61,7 +62,8 @@ def evaluate(results, accuracy, f1):
 
     # Create figure
     fig, ax = pl.subplots(2, 3, figsize = (15,10))
-
+    gs = gridspec.GridSpec(4, 4)
+    gs.update(wspace=0.025, hspace=0.05)
     # Constants
     bar_width = 0.3
     colors = ['#A00000','#00A0A0','#00A000']
